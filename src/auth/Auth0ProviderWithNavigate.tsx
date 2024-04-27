@@ -11,7 +11,7 @@ export const Auth0ProviderWithNavigate = ({ children }: Props) => {
   const clientId = "WTxTho52Rb6HyR92OxCLah6yE2YFThlY";
   //   import.meta.env.VITE_AUTH0_CLIENT_ID;
 
-  const redirectUri = "http://localhost:5173";
+  const redirectUri = "https://eatscom.netlify.app/";
   //   import.meta.env.VITE_AUTH0_CALLBACK_URL;
 
   if (!domain || !clientId || !redirectUri) {
