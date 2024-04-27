@@ -11,10 +11,10 @@ export const Auth0ProviderWithNavigate = ({ children }: Props) => {
   const clientId = "WTxTho52Rb6HyR92OxCLah6yE2YFThlY";
   //   import.meta.env.VITE_AUTH0_CLIENT_ID;
 
-  const redirectUri = "https://eatscom.netlify.app/";
+  const redirect_uri = "https://eatscom.netlify.app/";
   //   import.meta.env.VITE_AUTH0_CALLBACK_URL;
 
-  if (!domain || !clientId || !redirectUri) {
+  if (!domain || !clientId || !redirect_uri) {
     throw new Error("Unable to initialise auth");
   }
 
@@ -28,7 +28,7 @@ export const Auth0ProviderWithNavigate = ({ children }: Props) => {
       domain={domain}
       clientId={clientId}
       authorizationParams={{
-        redirectUri: redirectUri,
+        redirect_uri: redirect_uri,
       }}
       onRedirectCallback={onRedirectCallback}
     >
