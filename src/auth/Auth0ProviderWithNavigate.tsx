@@ -6,13 +6,10 @@ type Props = {
 
 export const Auth0ProviderWithNavigate = ({ children }: Props) => {
   const domain = "dev-xspz3anttt2uuks6.us.auth0.com";
-  //   import.meta.env.VITE_AUTH0_DOMAIN;
 
-  const clientId = "WTxTho52Rb6HyR92OxCLah6yE2YFThlY";
-  //   import.meta.env.VITE_AUTH0_CLIENT_ID;
+  const clientId = "Ks4cg2fWIgWXmfL9dmbCkSWrgo5u8lFZ";
 
   const redirect_uri = "https://eatscom.netlify.app/";
-  //   import.meta.env.VITE_AUTH0_CALLBACK_URL;
 
   if (!domain || !clientId || !redirect_uri) {
     throw new Error("Unable to initialise auth");
